@@ -4,51 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bkg"
     tools:context=".ui.SignUPActivity">
 
     <ImageView
+        android:id="@+id/img_logo"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="140dp"
         android:layout_alignParentTop="true"
-        android:layout_margin="20dp"
-        android:src="@drawable/unknown"/>
+        android:layout_marginTop="20dp"
+        android:src="@drawable/unknown" />
+
+    <TextView
+        android:id="@+id/text_logo_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_logo"
+        android:layout_marginTop="-10dp"
+        android:background="#90000000"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="RockStore"
+        android:textColor="@color/red_album"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:layout_marginHorizontal="20dp"
+        android:background="#90000000"
         android:orientation="vertical"
         android:padding="10dp">
 
         <EditText
-            android:drawableStart="@drawable/baseline_person_24"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:gravity="center"
             android:hint="Username"
-            android:gravity="center"/>
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
         <EditText
-            android:drawableStart="@drawable/baseline_lock_24"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/edit_password"
-            android:hint="Password"
-            android:gravity="center"/>
-        <EditText
-            android:drawableStart="@drawable/baseline_lock_24"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/edit_confirm_password"
-            android:hint="Confirm Password"
-            android:gravity="center"/>
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
+        <EditText
+            android:id="@+id/edit_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:gravity="center"
+            android:hint="@string/confirm_password"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
         <Button
+            android:id="@+id/button_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign up"
-            android:id="@+id/button_signup"/>
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/red_album"
+            android:textColor="@color/white"
+            android:elevation="30dp"
+            android:text="@string/sign_up"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

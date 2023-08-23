@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg"
+    tools:context=".ui.LoginActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/unknown" />
+
+    <TextView
+        android:id="@+id/text_logo_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@id/img_logo"
+        android:fontFamily="serif-monospace"
+        android:background="#90000000"
+        android:padding="8dp"
+        android:gravity="center"
+        android:text="RockStore"
+        android:textColor="@color/red_album"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_logo_login"
+        android:fontFamily="serif-monospace"
+        android:padding="8dp"
+        android:gravity="center"
+        android:text="@string/about_this_app"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linear_about"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@+id/text_about"
+        android:layout_marginHorizontal="20dp"
+        android:background="#90000000"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/text_about_description1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/this_app_was_developed_by_the_following_students"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_MultiLine"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:gravity="center_horizontal"
+            android:text="Otávio Rodrigues \nRodolfo Fernandes"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_MultiLine2"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:textAlignment="viewStart"
+            android:text="@string/as_unrequested_elements_in_the_prompt_as_we_decided_to_create_an_application_that_serves_as_a_music_library_we_sought_to_utilize_the_media_player_to_play_a_sample_song_for_each_created_album_non_the_other_hand_we_also_implemented_a_button_in_the_newmusicactivity_layout_to_enable_uploading_an_mp3_file_from_the_device_itself"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_MultiLine3"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:gravity="center_horizontal"
+            android:text="@string/self_evaluation_n19"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_back_main"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_about"
+        android:text="@string/back"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/red_album"
+        android:layout_marginHorizontal="100dp"/>
+
+
+
+
+</RelativeLayout>

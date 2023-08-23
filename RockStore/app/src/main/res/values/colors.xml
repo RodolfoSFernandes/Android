@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red_album">#E80000</color>
+    <color name="pale_black">#232b2b</color>
+    <color name="golden_metallic">#d4af37</color>
+    <color name="green_olive">#B5B35C</color>
+    <color name="grey_silver">#DDD6D6</color>
+    <color name="dark_yellow">#d6a725</color>
 </resources>
+

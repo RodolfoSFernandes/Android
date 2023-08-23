@@ -4,70 +4,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bkg"
     tools:context=".ui.LoginActivity">
-    
+
     <ImageView
+        android:id="@+id/img_logo"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="140dp"
         android:layout_alignParentTop="true"
-        android:layout_margin="20dp"
-        android:src="@drawable/unknown"/>
+        android:layout_marginTop="20dp"
+        android:src="@drawable/unknown" />
+
+    <TextView
+        android:id="@+id/text_logo_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_logo"
+        android:layout_marginTop="-10dp"
+        android:background="#90000000"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="RockStore"
+        android:textColor="@color/red_album"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:layout_marginHorizontal="20dp"
+        android:background="#90000000"
         android:orientation="vertical"
         android:padding="10dp">
-        
-        <EditText
-            android:drawableStart="@drawable/baseline_person_24"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/edit_username"
-            android:hint="Username"
-            android:gravity="center"/>
 
         <EditText
-            android:drawableStart="@drawable/baseline_lock_24"
+            android:id="@+id/edit_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/edit_password"
-            android:hint="Password"
+            android:drawableStart="@drawable/baseline_person_24"
             android:gravity="center"
-            android:inputType="textPassword"/>
-        
+            android:hint="@string/username"
+            android:text="admin"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:gravity="center"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:text="password"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
         <CheckBox
+            android:id="@+id/checkbox_logged"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Keep me logged"
-            android:id="@+id/checkbox_logged"/>
-        
+            android:text="@string/keep_me_logged"
+            android:textColor="@color/white" />
+
         <Button
+            android:id="@+id/button_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
-            android:id="@+id/button_login"/>
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/red_album"
+            android:elevation="30dp"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
     </LinearLayout>
-    
-    <TextView
-        android:id="@+id/text_signUp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="Ainda não tem conta? Registe-se!"
-        android:gravity="center"
-        android:layout_margin="20dp"/>
 
     <TextView
         android:id="@+id/text_recover_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/text_signUp"
-        android:text="Recupere a sua password"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:layout_margin="20dp"/>
+        android:text="@string/recover_password"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/text_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="@string/do_not_have_an_account_yet_sign_up"
+        android:textColor="@color/red_album" />
 
 
 </RelativeLayout>

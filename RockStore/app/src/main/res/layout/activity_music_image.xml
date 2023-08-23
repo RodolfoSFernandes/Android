@@ -4,101 +4,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bckgt"
     tools:context=".ui.MusicImageActivity">
 
     <TextView
+        android:id="@+id/text_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select an album"
-        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:background="#90000000"
         android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:padding="8dp"
+        android:text="@string/select_an_album"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        android:id="@+id/text_title"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
+        android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/button_remove_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_title"
-        android:padding="10dp">
+        app:layout_constraintTop_toBottomOf="@id/text_title">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
-            
+
             <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/jeopardy"
                 android:id="@+id/image_album1"
-                android:padding="5dp"/>
-            <ImageView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/from_the_lions_mouth"
+                android:padding="5dp"
+                android:src="@drawable/jeopardy" />
+
+            <ImageView
                 android:id="@+id/image_album2"
-                android:padding="5dp"/>
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/from_the_lions_mouth" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
 
             <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/patti_smith_horses"
                 android:id="@+id/image_album3"
-                android:padding="5dp"/>
-            <ImageView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/bright_green_field"
-                android:id="@+id/image_album4"
-                android:padding="5dp"/>
-        </LinearLayout> <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+                android:padding="5dp"
+                android:src="@drawable/patti_smith_horses" />
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/joy_division_unknown_pleasure"
-            android:id="@+id/image_album5"
-            android:padding="5dp"/>
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/nick_cave_and_the_bad_seeds_boatman"
-            android:id="@+id/image_album6"
-            android:padding="5dp"/>
+            <ImageView
+                android:id="@+id/image_album4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/bright_green_field" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image_album5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/joy_division_unknown_pleasure" />
+
+            <ImageView
+                android:id="@+id/image_album6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/nick_cave_and_the_bad_seeds_boatman" />
+        </LinearLayout>
+
     </LinearLayout>
-        
-    </LinearLayout>
-        
-        
+
 
     <Button
+        android:id="@+id/button_remove_image"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:id="@+id/button_remove_image"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/red_album"
+        android:text="Remove Image"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:text="Remove Image"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

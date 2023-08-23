@@ -6,5 +6,8 @@ data class MusicModel(
     val album: String = "",
     val genre: String = "",
     val year: Int = 0,
-    val imageId: Int = 0
+    val sampleName: String = "",
+    val sampleSong: Int = 0,
+    val infoAlbum: String = "",
+    val imageId: Int = 0,
 )

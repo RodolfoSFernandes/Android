@@ -3,6 +3,8 @@ package com.example.rockstore.ui
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
+import android.media.MediaPlayer
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
@@ -25,6 +27,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var dbHelper: DBHelper
     private var ascDesc: Boolean = true
 
+    private var mediaPlayer: MediaPlayer? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -38,10 +42,17 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.buttonLogout.setOnClickListener {
+
+            mediaPlayer?.stop()
+
             val editor: SharedPreferences.Editor = sharedPreferences.edit()
             editor.putString("username", "")
             editor.apply()
             finish()
+        }
+
+        binding.buttonAbout.setOnClickListener {
+            startActivity(Intent(this, AboutActivity::class.java))
         }
 
 
@@ -58,9 +69,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.buttonOrder.setOnClickListener {
-            if (ascDesc){
+            if (ascDesc) {
                 binding.buttonOrder.setImageResource(R.drawable.baseline_arrow_upward_24)
-            } else{
+            } else {
                 binding.buttonOrder.setImageResource(R.drawable.baseline_arrow_downward_24)
             }
             ascDesc = !ascDesc
@@ -78,14 +89,18 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-    private fun placeAdapter(){
+
+    private fun placeAdapter() {
         adapter = MusicListAdapter(musicList, MusicOnClickListener { music ->
-            val intent  = Intent(this@MainActivity, MusicDetailActivity::class.java)
+            val intent = Intent(applicationContext, MusicDetailActivity::class.java)
             intent.putExtra("id", music.id)
             result.launch(intent)
+
         })
+
         binding.recyclerViewMusic.adapter = adapter
     }
+
     private fun loadList() {
         musicList = dbHelper.getAllMusic().sortedWith(compareBy { it.name })
         placeAdapter()
@@ -101,6 +116,5 @@ class MainActivity : AppCompatActivity() {
 
         binding.listViewMusic.adapter=adapter */
     }
-
 
 }

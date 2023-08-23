@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RockStore</string>
+    <string name="about_this_app">Sobre esta aplicação</string>
+    <string name="this_app_was_developed_by_the_following_students">Esta aplicação foi desenvolvida por:</string>
+    <string name="as_unrequested_elements_in_the_prompt_as_we_decided_to_create_an_application_that_serves_as_a_music_library_we_sought_to_utilize_the_media_player_to_play_a_sample_song_for_each_created_album_non_the_other_hand_we_also_implemented_a_button_in_the_newmusicactivity_layout_to_enable_uploading_an_mp3_file_from_the_device_itself">Como elementos não solicitados no enunciado, decidimos criar uma aplicação que serve como uma biblioteca de músicas. Procurámos utilizar o media player para reproduzir uma música em destaque de cada álbum. Por outro lado, também implementámos um botão no layout NewMusicActivity para permitir o upload de um ficheiro MP3 a partir do próprio dispositivo.</string>
+    <string name="self_evaluation_n19">Auto-avaliação: \n19</string>
+    <string name="back">Voltar</string>
+    <string name="username">Utilizador</string>
+    <string name="password">Palavra-passe</string>
+    <string name="keep_me_logged">Manter-me autenticado</string>
+    <string name="login">Login</string>
+    <string name="recover_password">Recuperar palavra-passe</string>
+    <string name="do_not_have_an_account_yet_sign_up">Ainda não tem conta? Registe-se!</string>
+    <string name="about">Sobre</string>
+    <string name="logout">Logout</string>
+    <string name="music_details">Detalhes da Música</string>
+    <string name="name">Nome</string>
+    <string name="album">Álbum</string>
+    <string name="year">Ano</string>
+    <string name="genre">Género</string>
+    <string name="featured_song_name">Nome da Música em Destaque</string>
+    <string name="sample_song">Música em Destaque</string>
+    <string name="album_infos">Informações do Álbum</string>
+    <string name="edit">Editar</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete">Eliminar</string>
+    <string name="select_an_album">Selecionar um álbum</string>
+    <string name="new_music">Nova Música</string>
+    <string name="sample_song_name">Nome da Música em Destaque</string>
+    <string name="select_mp3_song">Selecionar MP3</string>
+    <string name="confirm_password">Confirmar Palavra-passe</string>
+    <string name="sign_up">Registar</string>
+    <string name="welcome_and_enjoy">Bem-vindo e divirta-se!</string>
+    <string name="artist">Artista</string>
+    <string name="featured_track">Faixa em Destaque:</string>
+    <string name="example_song_from_the_album">Música de exemplo do álbum</string>
+
+
+</resources>

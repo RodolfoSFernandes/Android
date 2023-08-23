@@ -1,3 +1,40 @@
 <resources>
     <string name="app_name">RockStore</string>
+    <string name="about_this_app">About this app</string>
+    <string name="this_app_was_developed_by_the_following_students">This app was developed by the following students:</string>
+    <string name="as_unrequested_elements_in_the_prompt_as_we_decided_to_create_an_application_that_serves_as_a_music_library_we_sought_to_utilize_the_media_player_to_play_a_sample_song_for_each_created_album_non_the_other_hand_we_also_implemented_a_button_in_the_newmusicactivity_layout_to_enable_uploading_an_mp3_file_from_the_device_itself">As unrequested elements in the prompt, as we decided to create an application that serves as a music library, we sought to utilize the media player to play a sample song for each created album.\nOn the other hand, we also implemented a button in the NewMusicActivity layout to enable uploading an mp3 file from the device itself.</string>
+    <string name="self_evaluation_n19">Self evaluation: \n19</string>
+    <string name="back">Back</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="keep_me_logged">Keep me logged</string>
+    <string name="login">Login</string>
+    <string name="recover_password">Recover password</string>
+    <string name="do_not_have_an_account_yet_sign_up">Do not have an account yet? Sign up!</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="music_details">Music Details</string>
+    <string name="name">Name</string>
+    <string name="album">Album</string>
+    <string name="year">Year</string>
+    <string name="genre">Genre</string>
+    <string name="featured_song_name">Featured Song Name</string>
+    <string name="sample_song">Sample Song</string>
+    <string name="album_infos">Album Infos</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="select_an_album">Select an album</string>
+    <string name="new_music">New Music</string>
+    <string name="sample_song_name">Sample Song Name</string>
+    <string name="select_mp3_song">Select MP3 Song</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="welcome_and_enjoy">Welcome and enjoy!</string>
+    <string name="artist">Artist</string>
+    <string name="featured_track">Featured track:</string>
+    <string name="example_song_from_the_album">Example song from the album</string>
+
+
 </resources>
